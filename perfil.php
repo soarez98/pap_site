@@ -72,6 +72,7 @@
 	<tr><th>Email </th><td><?php echo $userRow['userEmail']; ?></td></tr>
 	<tr><th>Data Registo </th><td><?php echo $userRow['userRegisto']; ?></td></tr>
 	<tr><th>Utilizador</th><td><?php echo $userRow['userName']; ?></td></tr>
+	<tr><th>Utilizador</th><td><?php echo $userRow['userName']; ?></td></tr>
 	<tr><th>Utilizador</th><td> <input type="text" name="lname" value="<?php echo $userRow['userName']; ?>">  </td></tr>
    
 
