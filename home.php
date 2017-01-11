@@ -45,6 +45,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 			  <span class="glyphicon glyphicon-user"></span>&nbsp;Olá,  <?php echo $userRow['userName']; ?>&nbsp;<span class="caret"></span></a>
               <ul class="dropdown-menu">
+			    <li><a href="#"><span class=""></span>&#9742; Serviços</a></li>
                 <li><a href="perfil.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Perfil</a></li>
 				<li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sair</a></li>
               </ul>
@@ -62,20 +63,33 @@
 	<div class="container">
     
     	<div class="page-header">
-    	<h3>TEXTO</h3>
+    	<h3>Painel</h3>
     	</div>
         
         <div class="row">
         <div class="col-lg-12">
-        <h1>TEXTO</h1>
         </div>
-        </div>
-    
+        </div> 
+		<div class="hover08 column">
+		<center>
+		<div>
+			<a href="#">
+			<figure><img align="left" src="http://www.lahloulawfirm.com/site_media/images/flatpages/transport_spe1.jpg.300x300_q85_crop.jpg" /></figure>
+			</a>
+			<a href="#">
+			<figure><img align="left" src="http://www.lahloulawfirm.com/site_media/images/flatpages/transport_spe1.jpg.300x300_q85_crop.jpg" /></figure>
+			</a>
+			<a href="#">
+			<figure><img align="left" src="http://www.lahloulawfirm.com/site_media/images/flatpages/transport_spe1.jpg.300x300_q85_crop.jpg" /></figure>
+			</a>
+			
+		</div>
+		</center>
     </div>
     
     </div>
    
-   
+  
    
 	
     <script src="assets/jquery-1.11.3-jquery.min.js"></script>

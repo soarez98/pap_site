@@ -19,6 +19,10 @@
 		$email = strip_tags($email);
 		$email = htmlspecialchars($email);
 		
+		$adress = trim($_POST['adress']);
+		$adress= strip_tags($adress);
+		$adress = htmlspecialchars($adress);
+		
 		$pass = trim($_POST['pass']);
 		$pass = strip_tags($pass);
 		$pass = htmlspecialchars($pass);
@@ -64,7 +68,7 @@
 		// if there's no error, continue to signup
 		if( !$error ) {
 			
-			$query = "INSERT INTO users(userName,userEmail,userPass,userRegisto) VALUES('$name','$email','$password', now())";
+			$query = "INSERT INTO users(userName,userEmail,userPass,userRegisto, userRua) VALUES('$name','$email','$password', now(),'$adress')";
 			$res = mysql_query($query);
 				
 			if ($res) {
@@ -72,6 +76,7 @@
 				$errMSG = "Successfully registered, you may login now";
 				unset($name);
 				unset($email);
+				unset($adress);
 				unset($pass);
 			} else {
 				$errTyp = "danger";
@@ -133,6 +138,14 @@
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
             	<input type="email" name="email" class="form-control" placeholder="Enter Your Email" maxlength="40" value="<?php echo $email ?>" />
+                </div>
+                <span class="text-danger"><?php echo $emailError; ?></span>
+            </div>
+			
+			<div class="form-group">
+            	<div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+            	<input type="adress" name="adress" class="form-control" placeholder="Endereço" maxlength="40" value="<?php echo $adress ?>" />
                 </div>
                 <span class="text-danger"><?php echo $emailError; ?></span>
             </div>

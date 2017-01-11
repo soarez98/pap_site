@@ -16,7 +16,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Welcome - <?php echo $userRow['userEmail']; ?></title>
+<title>Perfil - <?php echo $userRow['userName']; ?></title>
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -45,6 +45,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 			  <span class="glyphicon glyphicon-user"></span>&nbsp;Olá,  <?php echo $userRow['userName']; ?>&nbsp;<span class="caret"></span></a>
               <ul class="dropdown-menu">
+				<li><a href="#"><span class=""></span>&#9742; Serviços</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Perfil</a></li>
 				<li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sair</a></li>
               </ul>
@@ -62,18 +63,17 @@
 	<div class="container">
     
     	<div class="page-header">
-    	<h3>Perfil</h3>
+    	<button class="button" style="vertical-align:middle" onClick="parent.location='#'"><span>Perfil </span></button> <button class="button" style="vertical-align:middle" onClick="parent.location='#'"><span>Alterar </span></button>
     	</div>
 		
 		
 	
-	<table cellspacing='0'> 
+	<table cellspacing='0'>
+	<tr><th>ID</th><td><?php echo $userRow['userId']; ?></td></tr>	
 	<tr><th>Utilizador </th><td><?php echo $userRow['userName']; ?></td></tr>
-	<tr><th>Email </th><td><?php echo $userRow['userEmail']; ?></td></tr>
 	<tr><th>Data Registo </th><td><?php echo $userRow['userRegisto']; ?></td></tr>
-	<tr><th>Utilizador</th><td><?php echo $userRow['userName']; ?></td></tr>
-	<tr><th>Utilizador</th><td><?php echo $userRow['userName']; ?></td></tr>
-	<tr><th>Utilizador</th><td> <input type="text" name="lname" value="<?php echo $userRow['userName']; ?>">  </td></tr>
+	<tr><th>Email </th><td><?php echo $userRow['userEmail']; ?></td></tr>
+	<tr><th>Endereço </th><td><?php echo $userRow['userRua']; ?></td></tr>
    
 
 </table>
