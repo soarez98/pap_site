@@ -82,12 +82,15 @@ font-size: 18px;
 	-moz-border-radius: 130px;
 }
 .hover08 figure:hover img {
+
 	-webkit-filter: grayscale(70%) blur(0px);
 	filter: grayscale(70%) blur(0px);
 
 }
 
+
 h1 {
+	font-family: Verdana, Geneva, sans-serif;
 	text-align: justify;
 	font-size: 95%;
 }
@@ -96,7 +99,7 @@ img.bottom {
     vertical-align: text-bottom;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){background-color: #F8F8F8 }
 
 th {
     background-color:	#E3E3E3;

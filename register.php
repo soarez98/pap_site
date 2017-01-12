@@ -106,7 +106,7 @@
     	<div class="col-md-12">
         
         	<div class="form-group">
-            	<h2 class="">Sign Up.</h2>
+            	<h2 class="">Registar</h2>
             </div>
         
         	<div class="form-group">
@@ -129,7 +129,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-            	<input type="text" name="name" class="form-control" placeholder="Enter Name" maxlength="50" value="<?php echo $name ?>" />
+            	<input type="text" name="name" class="form-control" placeholder="Utilizador" maxlength="50" value="<?php echo $name ?>" />
                 </div>
                 <span class="text-danger"><?php echo $nameError; ?></span>
             </div>
@@ -137,7 +137,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-            	<input type="email" name="email" class="form-control" placeholder="Enter Your Email" maxlength="40" value="<?php echo $email ?>" />
+            	<input type="email" name="email" class="form-control" placeholder="Email" maxlength="40" value="<?php echo $email ?>" />
                 </div>
                 <span class="text-danger"><?php echo $emailError; ?></span>
             </div>
@@ -153,7 +153,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            	<input type="password" name="pass" class="form-control" placeholder="Enter Password" maxlength="15" />
+            	<input type="password" name="pass" class="form-control" placeholder="Password" maxlength="15" />
                 </div>
                 <span class="text-danger"><?php echo $passError; ?></span>
             </div>
@@ -163,7 +163,8 @@
             </div>
             
             <div class="form-group">
-            	<button type="submit" class="btn btn-block btn-primary" name="btn-signup">Sign Up</button>
+            	<button type="submit" class="btn btn-block btn-primary" name="btn-signup">Registar</button>
+				<button class="btn btn-block btn-primary" type=button onClick="parent.location='index.php'">Entrar</button>
             </div>
             
             <div class="form-group">
@@ -171,7 +172,6 @@
             </div>
             
             <div class="form-group">
-            	<a href="index.php">Sign in Here...</a>
             </div>
         
         </div>
