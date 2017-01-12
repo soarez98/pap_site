@@ -68,18 +68,33 @@ font-size: 18px;
 
 .hover08 figure img {
 	
+	margin:0 20px 10px 0;
+	width: 180px;
+    height: 180px;
 	-webkit-filter: grayscale(0) blur(0);
 	filter: grayscale(0) blur(0);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-	padding-left: 30px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 130px;
 }
 .hover08 figure:hover img {
-	-webkit-filter: grayscale(100%) blur(0px);
-	filter: grayscale(100%) blur(0px);
+	-webkit-filter: grayscale(70%) blur(0px);
+	filter: grayscale(70%) blur(0px);
 
 }
 
+h1 {
+	text-align: justify;
+	font-size: 95%;
+}
+
+img.bottom {
+    vertical-align: text-bottom;
+}
 
 tr:nth-child(even){background-color: #f2f2f2}
 
